@@ -29,6 +29,10 @@ package appModules;
 
 			LogIn_Page.btn_LogIn(driver).click();
 
+			quiteBrowser(driver);
         }
 
+		public static void quiteBrowser(WebDriver driver){
+			driver.quit();
+		}
 }

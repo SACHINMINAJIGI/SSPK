@@ -6,7 +6,9 @@ package automationFramework;
 
      import org.openqa.selenium.firefox.FirefoxDriver;
 
-     // Import package pageObject.*
+import appModules.SignIn_Action;
+
+// Import package pageObject.*
 
      import pageObjects.Home_Page;
 
@@ -40,8 +42,10 @@ LogIn_Page.btn_LogIn(driver).click();
 
 System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
 
-Home_Page.lnk_LogOut(driver).click(); 
-driver.quit();
+/*Home_Page.lnk_LogOut(driver).click(); 
+driver.quit();*/
+SignIn_Action.quiteBrowser(driver);
+
 }
 
 }
